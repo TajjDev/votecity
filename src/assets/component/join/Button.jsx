@@ -1,6 +1,6 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
-import "./Join.css"
+import "./join.css"
 const Button = ({href,text,the,fon,bod}) => {
   return (
     <>
