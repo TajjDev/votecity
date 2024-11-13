@@ -12,7 +12,7 @@ const GetStarted = () => {
         <div id="getSt">
             <Get start={"/#"} h4Txt={"Poll Voting"} pTxt={"Create your own polls, cast your vote, join the conversation and make an impact."} img={img1}/>
             <Get start={"/#"} h4Txt={"Event Booking"} pTxt={"Announce your next big moment, secure your spot and book event with just a few clicks."} img={img2}/>
-            <Get start={"/#"} h4Txt={"Projct Funding"} pTxt={"Bring your ideas to life, get funding and donate to support causes that matter to you."} img={img3}/>
+            <Get start={"/#"} h4Txt={"Project Funding"} pTxt={"Bring your ideas to life, get funding and donate to support causes that matter to you."} img={img3}/>
         </div>
     </div>
   )

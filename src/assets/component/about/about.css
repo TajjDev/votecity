@@ -1,5 +1,74 @@
-#hi{
-    background-color: black;
+#about{
+    /* background-color: black; */
     color: white;
     height: 266px;
+    font-family: poppins;
+    padding: 16px 32px;
+    width: 88.3%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#about span{
+    color: rgba(245, 235, 140, 1);
+}
+#abt p{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    width: 387px;
+    height: 96px;
+}
+#about h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+#misvis{
+    width: 440px;
+    display: flex;
+    /* justify-content: space-around; */
+    min-width: 360px;
+    gap: 32px;
+    max-width: 450px;
+    height: 234px auto;
+    flex-direction: column;
+}
+#abt h6{
+    width: 195px;
+    height: 44px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 24px;
+    border-radius: 8px;
+    line-height: 21px;
+    display: flex;
+    color: rgba(245, 235, 140, 1);
+    align-items: center;
+    background-color: rgba(245, 235, 140, 0.1);
+}
+#vision, #mission{
+    border-left: 5px solid transparent ;
+    background: linear-gradient(rgb(14, 14, 14), rgb(14, 14, 14)) padding-box,
+    linear-gradient(to top, rgba(31, 31, 31, 1), rgba(245, 235, 140, 1));
+    /*  */
+    padding-left: 16px ;
+    width: 460px auto;
+}
+#vision, #mission p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.read{
+    font-size: 600;
+    color: #000;
+}
+#abt{
+    gap: 16px;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
 }

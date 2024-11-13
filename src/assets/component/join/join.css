@@ -1,6 +1,6 @@
 #join{
     background-color: rgba(31, 31, 31, 1);
-    height: 360px;
+    height: 360px auto;
     padding: 16px;
     width: 100%;
     font-family:poppins;
@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    word-wrap: break-word;
 }
 #join h1{
     font-size: 32px;
