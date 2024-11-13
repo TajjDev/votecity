@@ -1,5 +1,6 @@
 import React from 'react'
 import './about.css'
+import VisMis from './VisMis'
 const About = () => {
   return (
     <div id='about'>
@@ -8,14 +9,8 @@ const About = () => {
           <p>What You Should Know About <span>Vote</span>City</p>
         </div>
         <div id="misvis">
-          <div id="mission">
-            <h3>Our <span>Mission</span></h3>
-            <p>To empower citizens to engage actively in their communities by providing a platform for informed decision-making, easy event participation and...<span className='read'>Read More</span></p>
-          </div>
-          <div id="vision">
-            <h3>Our Vision</h3>
-            <p>To empower citizens to engage actively in their communities by providing a platform for informed decision-making, easy event participation and...<span className='read'>Read More</span></p>
-          </div>
+            <VisMis id={"mission"} textH3={"Mission"} p={"To empower citizens to engage actively in their communities by providing a platform for informed decision-making,     easy event participation and..."} read={"Read More"}/>
+            <VisMis id={"vision"} textH3={"Vision"} p={"To empower citizens to engage actively in their communities by providing a platform for informed decision-making, easy    event participation and..."} read={"Read More"}/>
         </div>
     </div>
   )

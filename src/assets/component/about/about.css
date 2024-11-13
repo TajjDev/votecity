@@ -1,12 +1,14 @@
 #about{
     /* background-color: black; */
     color: white;
-    height: 266px;
+    height: 266px auto;
     font-family: poppins;
     padding: 16px 32px;
+    padding-top: 50px;
     width: 88.3%;
     align-self: center;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -18,7 +20,7 @@
     font-weight: 700;
     line-height: 48px;
     width: 387px;
-    height: 96px;
+    height: 96px auto;
 }
 #about h3{
     font-size: 20px;
@@ -28,10 +30,9 @@
 #misvis{
     width: 440px;
     display: flex;
-    /* justify-content: space-around; */
-    min-width: 360px;
+    justify-content: space-between;
+    /* min-width: 360px; */
     gap: 32px;
-    max-width: 450px;
     height: 234px auto;
     flex-direction: column;
 }
@@ -47,12 +48,14 @@
     display: flex;
     color: rgba(245, 235, 140, 1);
     align-items: center;
+    justify-content: center;
     background-color: rgba(245, 235, 140, 0.1);
 }
 #vision, #mission{
-    border-left: 5px solid transparent ;
-    background: linear-gradient(rgb(14, 14, 14), rgb(14, 14, 14)) padding-box,
-    linear-gradient(to top, rgba(31, 31, 31, 1), rgba(245, 235, 140, 1));
+    /* border-top: 2px solid rgb(14, 14, 14); */
+    border-left: 5px solid #f5eb8c;
+    /* background: linear-gradient(rgb(14, 14, 14), rgb(14, 14, 14)) padding-box, */
+    /* linear-gradient(to top, rgba(31, 31, 31, 1), #f5eb8c); */
     /*  */
     padding-left: 16px ;
     width: 460px auto;
@@ -64,11 +67,103 @@
 }
 .read{
     font-size: 600;
-    color: #000;
 }
 #abt{
     gap: 16px;
     align-self: start;
     display: flex;
     flex-direction: column;
+}
+@media screen and (max-width:1149px) {
+    #abt p{
+        font-size: 24px;
+        width: 350px;
+    }
+    #about h3{
+        font-size: 18px;
+    }
+    #abt h6{
+        font-size: 13px;
+    }
+    #vision, #mission{
+        border-left: 4px solid #f5eb8c;
+    }
+    #vision, #mission p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:899px) {
+    #abt p{
+        font-size: 20px;
+        width: 350px;
+    }
+    #about h3{
+        font-size: 16px;
+    }
+    #abt h6{
+        font-size: 12px;
+        text-align: center;
+    }
+    #vision, #mission{
+        border-left: 3px solid #f5eb8c;
+    }
+    #vision, #mission p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:788px) {
+    #abt p{
+        font-size: 18px;
+        width: 304px;
+    }
+    #about h3{
+        font-size: 15px;
+    }
+    #abt h6{
+        font-size: 10px;
+        text-align: center;
+    }
+    #vision, #mission{
+        border-left: 3px solid #f5eb8c;
+    }
+    #vision, #mission p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:480px) {
+    #about{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 16px 16px;
+    }
+    #vision, #mission p{
+        font-size: 14px;
+        width: 100%;
+        text-align: start;
+    }
+    #abt p{
+        font-size: 32px;
+        /* width: 387px; */
+        width: 100%;
+        /* height: auto; */
+    }
+    #abt h6{
+        font-size: 14px;
+        text-align: center;
+    }
+    #about h3{
+        font-size: 20px;
+        width:  auto;
+        text-align: start;
+    }
+    #abt{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        align-self: center;
+    }
+    #misvis{
+        width: 100%;
+    }
 }

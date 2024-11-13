@@ -11,6 +11,7 @@ const App = () => {
       <Nav></Nav>
     </div>
     <div id="main">
+      <main id='mmm'></main>
       <Join></Join>
       <GetStarted></GetStarted>
       <About></About>

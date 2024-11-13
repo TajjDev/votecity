@@ -3,8 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  width: 100%;
+}
 #root{
-  height: 50px;
+  /* height: 50000px; */
   padding: 16px 32px;
   height: 100%;
   /* color: blue; */
@@ -12,9 +15,26 @@
   background: rgb(14, 14, 14);
 }
 #main{
-  height: 1076px auto;
+  height: auto ;
   display: flex;
   flex-direction: column;
   column-gap: 20px;
   justify-content: space-around;
+}
+@media screen and (max-width:480px){
+  #mmm{
+   height: 360px;
+   width: 100%;
+   align-self: center;
+   background-color: rgba(31, 31, 31, 1);
+   border-radius: 16px;
+  
+  }
+  #main{
+    width: 100%;
+  }
+  #root{
+    padding: 16px;
+    height: auto;
+  }
 }
