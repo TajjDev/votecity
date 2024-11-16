@@ -1,7 +1,19 @@
+import { useState } from 'react'
 import React from 'react'
 import './about.css'
 import VisMis from './VisMis'
 const About = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpandedM, setIsExpandedM] = useState(false);
+  
+  const longTextM = "To empower citizens to engage actively in their communities by providing a platform for informed decision-making,     easy event participation and"
+  const longText = "Our vision is to become the leading e-service platform for voting, ticketing and fundraising in africa, driving inovation, transparency and finacial inclusion";
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded);
+  };
+  const toggleReadMoreM = () => {
+    setIsExpandedM(!isExpandedM);
+  };
   return (
     <>
     <div id='about'>
@@ -10,8 +22,12 @@ const About = () => {
           <p>What You Should Know About <span>Vote</span>City</p>
         </div>
         <div id="misvis">
-            <VisMis id={"mission"} textH3={"Mission"} p={"To empower citizens to engage actively in their communities by providing a platform for informed decision-making,     easy event participation and..."} read={"Read More"}/>
-            <VisMis id={"vision"} textH3={"Vision"} p={"Our vision is to become the leading e-service platform for voting, ticketing and fundraising in africa, driving inovation, transparency and finacial inclusion..."} read={"Read More"}/>
+            <VisMis id={"mission"} textH3={"Mission"} p={isExpandedM ? longText : `${longTextM.substring(0, 100)}...`} read={<span className='vM' onClick={toggleReadMoreM}>
+  {isExpandedM ? 'Read Less' : 'Read More'}
+</span>}/>
+            <VisMis id={"vision"} textH3={"Vision"} p={isExpanded ? longText : `${longText.substring(0, 100)}...`} read={ <span className='vM' onClick={toggleReadMore}>
+   {isExpanded ? 'Read Less' : 'Read More'}
+ </span>}/>
         </div>
     </div>
     <div id="con">
