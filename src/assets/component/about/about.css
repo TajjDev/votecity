@@ -238,13 +238,13 @@
         gap: 7px;
     }
     #contact p{
-        font-size: 9px;
+        font-size: 12px;
     }
     #contact span{
         font-weight: 600;
     }
     #contact h6, #social h6{
-        font-size: 12px;
+        font-size: 16px;
         text-decoration: underline 2px #f5eb8c;
         font-weight: 700;
         text-transform: capitalize;
