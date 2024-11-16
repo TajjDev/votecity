@@ -38,3 +38,8 @@ body{
     height: auto;
   }
 }
+@media screen and (max-width:396px) {
+  #mmm{
+    height: 300px;
+  }
+}

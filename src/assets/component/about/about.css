@@ -12,6 +12,54 @@
     justify-content: space-between;
     align-items: center;
 }
+#con{
+    display: flex;
+    justify-content: space-between;
+    width: 88.3%;
+    justify-self: center;
+    align-self: center;
+    padding: 16px 32px;
+}
+#social{
+    padding: 16px 32px;
+    color: #fff;
+    display: flex;
+    text-transform: capitalize;
+    border-right: 5px solid #f5eb8c;
+    border-top: 3px solid #f5eb8c;
+    border-radius: 18px;
+}
+#social h6{
+    font-size: 30px;
+    text-decoration: underline 2px #f5eb8c;
+    font-weight: 700;
+}
+#contact{
+    width: auto;
+    padding: 16px 32px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    gap: 7px;
+    font-family: poppins;
+    border-radius: 18px;
+    align-self: flex-start;
+    border-left: 5px solid #f5eb8c;
+    border-top: 3px solid #f5eb8c;
+}
+#contact p{
+    font-size: 20px;
+}
+#contact span{
+    font-weight: 600;
+}
+#contact h6{
+    font-size: 30px;
+    text-decoration: underline 2px #f5eb8c;
+    font-weight: 700;
+    text-transform: capitalize;
+}
 #about span{
     color: rgba(245, 235, 140, 1);
 }
@@ -63,6 +111,7 @@
 #vision, #mission p{
     font-size: 14px;
     font-weight: 400;
+    color: rgba(224, 224, 224, 1);
     line-height: 21px;
 }
 .read{
@@ -72,9 +121,22 @@
     gap: 16px;
     align-self: start;
     display: flex;
-    flex-direction: column;
+    flex-direction:
+     column;
 }
 @media screen and (max-width:1149px) {
+    #contact p{
+        font-size: 118x;
+    }
+    #contact span{
+        font-weight: 600;
+    }
+    #contact h6{
+        font-size: 27px;
+        text-decoration: underline 2px #f5eb8c;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
     #abt p{
         font-size: 24px;
         width: 350px;
@@ -90,12 +152,31 @@
     }
     #vision, #mission p{
         font-size: 13px;
+        
+    }
+    #contact{
+        border-left: 4px solid #f5eb8c;
+        justify-self: center;
+        border-top: 2px solid #f5eb8c;
     }
 }
 @media screen and (max-width:899px) {
+    #contact p{
+        font-size: 15px;
+    }
+    #contact span{
+        font-weight: 600;
+    }
+    #contact h6{
+        font-size: 23px;
+        text-decoration: underline 2px #f5eb8c;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
     #abt p{
         font-size: 20px;
-        width: 350px;
+        width: 340px;
+        line-height: 30px;
     }
     #about h3{
         font-size: 16px;
@@ -112,6 +193,18 @@
     }
 }
 @media screen and (max-width:788px) {
+    #contact p{
+        font-size: 14px;
+    }
+    #contact span{
+        font-weight: 600;
+    }
+    #contact h6{
+        font-size: 20px;
+        text-decoration: underline 2px #f5eb8c;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
     #abt p{
         font-size: 18px;
         width: 304px;
@@ -122,6 +215,7 @@
     #abt h6{
         font-size: 10px;
         text-align: center;
+        /* width: 170px; */
     }
     #vision, #mission{
         border-left: 3px solid #f5eb8c;
@@ -130,9 +224,30 @@
         font-size: 10px;
     }
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:620px) {
+    #contact{
+        align-self: start;
+        padding: 8px 16px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    #contact p{
+        font-size: 14px;
+    }
+    #contact span{
+        font-weight: 600;
+    }
+    #contact h6{
+        font-size: 20px;
+        text-decoration: underline 2px #f5eb8c;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
     #about{
         flex-direction: column;
+        gap: 25px;
         justify-content: center;
         width: 100%;
         padding: 16px 16px;
@@ -143,7 +258,7 @@
         text-align: start;
     }
     #abt p{
-        font-size: 32px;
+        font-size: 28px;
         /* width: 387px; */
         width: 100%;
         /* height: auto; */
@@ -165,5 +280,58 @@
     }
     #misvis{
         width: 100%;
+        padding-top: 40px;
+    }
+}
+@media screen and (max-width:480px) {
+    #contact{
+        align-self: center;
+        padding: 8px 16px;
+        /* width: 88.3%; */
+    }
+    #about{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 16px 16px;
+    }
+    #vision, #mission p{
+        font-size: 14px;
+        width: 100%;
+        text-align: start;
+    }
+    #abt p{
+        font-size: 28px;
+        /* width: 387px; */
+        width: 100%;
+        /* height: auto; */
+    }
+    #abt h6{
+        font-size: 14px;
+        text-align: center;
+    }
+    #about h3{
+        font-size: 20px;
+        width:  auto;
+        text-align: start;
+    }
+    #abt{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        align-self: center;
+    }
+    #misvis{
+        width: 100%;
+        padding-top: 40px;
+    }
+}
+@media screen and (max-width:396px) {
+    #abt p{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    #vision, #mission p{
+        font-size: 12px;
     }
 }
