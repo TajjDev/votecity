@@ -20,7 +20,7 @@
     justify-content: space-between;
     width: 88.3%;
     background-color: rgba(31, 31, 31, 1);
-    border-top: 2px solid #f5eb8c;
+    /* border: 2px solid #f5eb8c; */
     border-top-right-radius: 50px;
     border-top: 2px solid #f5eb8c;
     justify-self: center;
@@ -231,7 +231,7 @@
 @media screen and (max-width:620px) {
     #con{
         flex-direction: column;
-        width: 92%;
+        width: 100%;
         padding: 16px 16px;
         /* margin: 0 160px; */
     }
@@ -311,7 +311,7 @@
         text-align: start;
     }
     #abt p{
-        font-size: 28px;
+        font-size: 32px;
         /* width: 387px; */
         width: 100%;
         /* height: auto; */
@@ -338,7 +338,7 @@
 }
 @media screen and (max-width:396px) {
     #abt p{
-        font-size: 20px;
+        font-size: 25px;
         line-height: 25px;
     }
     #vision, #mission p{

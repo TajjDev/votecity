@@ -4,6 +4,7 @@ import Get from './Get'
 import img1 from "/src/assets/frame.png"
 import img2 from "/src/assets/frame2.png"
 import img3 from "/src/assets/frame3.png"
+// import Apps from './Apps'
 const GetStarted = () => {
   return (
     <div id='offer'>
