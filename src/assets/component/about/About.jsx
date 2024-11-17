@@ -6,8 +6,8 @@ const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isExpandedM, setIsExpandedM] = useState(false);
   
-  const longTextM = "To empower citizens to engage actively in their communities by providing a platform for informed decision-making,     easy event participation and"
-  const longText = "Our vision is to become the leading e-service platform for voting, ticketing and fundraising in africa, driving inovation, transparency and finacial inclusion";
+  const longTextM = "Our Mission is to empower users with easy-to-use,monetizable, and reliable services."
+  const longText = "Our vision is to become the leading e-service platform for voting, ticketing and fundraising in Africa, driving inovation, transparency and finacial inclusion.";
   const toggleReadMore = () => {
     setIsExpanded(!isExpanded);
   };
@@ -22,7 +22,7 @@ const About = () => {
           <p>What You Should Know About <span>Vote</span>City</p>
         </div>
         <div id="misvis">
-            <VisMis id={"mission"} textH3={"Mission"} p={isExpandedM ? longText : `${longTextM.substring(0, 100)}...`} read={<span className='vM' onClick={toggleReadMoreM}>
+            <VisMis id={"mission"} textH3={"Mission"} p={longTextM} read={<span className='vM' onClick={toggleReadMoreM}>
   {isExpandedM ? 'Read Less' : 'Read More'}
 </span>}/>
             <VisMis id={"vision"} textH3={"Vision"} p={isExpanded ? longText : `${longText.substring(0, 100)}...`} read={ <span className='vM' onClick={toggleReadMore}>
@@ -30,19 +30,21 @@ const About = () => {
  </span>}/>
         </div>
     </div>
-    <div id="con">
-         <div id="contact">
-           <h6>contact information</h6>
-           <p><span>Email</span>: support@votecity.ng</p>
-           <p><span>Phone Number</span>: +234 913 926 5486</p>
-           <p><span>Address</span>: Lagos State, Nigeria</p>
-        </div>
-        <div id="social">
-          <h6>Our Social Media</h6>
-        </div>
-    </div>
+    {/* <div id="con"> */}
+         {/* <div id="contact"> */}
+           {/* <h6>contact information</h6> */}
+           {/* <p><span>Email</span>: support@votecity.ng</p> */}
+           {/* <p><span>Phone Number</span>: +234 913 926 5486</p> */}
+           {/* <p><span>Address</span>: Lagos State, Nigeria</p> */}
+        {/* </div> */}
+        {/* <div id="social"> */}
+          {/* <h6>Our Social Media</h6> */}
+        {/* </div> */}
+    {/* </div> */}
    </>
   )
 }
+
+
 
 export default About
