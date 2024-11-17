@@ -22,8 +22,7 @@ const About = () => {
           <p>What You Should Know About <span>Vote</span>City</p>
         </div>
         <div id="misvis">
-            <VisMis id={"mission"} textH3={"Mission"} p={longTextM} read={<span className='vM' onClick={toggleReadMoreM}>
-  {isExpandedM ? 'Read Less' : 'Read More'}
+            <VisMis id={"mission"} textH3={"Mission"} p={longTextM} >
 </span>}/>
             <VisMis id={"vision"} textH3={"Vision"} p={isExpanded ? longText : `${longText.substring(0, 100)}...`} read={ <span className='vM' onClick={toggleReadMore}>
    {isExpanded ? 'Read Less' : 'Read More'}
