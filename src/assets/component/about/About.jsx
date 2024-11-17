@@ -30,17 +30,17 @@ const About = () => {
  </span>}/>
         </div>
     </div>
-    {/* <div id="con"> */}
-         {/* <div id="contact"> */}
-           {/* <h6>contact information</h6> */}
-           {/* <p><span>Email</span>: support@votecity.ng</p> */}
-           {/* <p><span>Phone Number</span>: +234 913 926 5486</p> */}
-           {/* <p><span>Address</span>: Lagos State, Nigeria</p> */}
-        {/* </div> */}
-        {/* <div id="social"> */}
-          {/* <h6>Our Social Media</h6> */}
-        {/* </div> */}
-    {/* </div> */}
+    <div id="con"> 
+          <div id="contact"> 
+           <h6>contact information</h6> 
+           <p><span>Email</span>: support@votecity.ng</p>
+           <p><span>Phone Number</span>: +234 913 926 5486</p> 
+            <p><span>Address</span>: Lagos State, Nigeria</p> 
+        </div> 
+         <div id="social">
+          <h6>Our Social Media</h6
+         </div> 
+    </div> 
    </>
   )
 }
