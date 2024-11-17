@@ -22,25 +22,23 @@ const About = () => {
           <p>What You Should Know About <span>Vote</span>City</p>
         </div>
         <div id="misvis">
-            <VisMis id={"mission"} textH3={"Mission"} p={longTextM}>
-{/*   {isExpandedM ? 'Read Less' : 'Read More'} */}
-</span>}/>
+            <VisMis id={"mission"} textH3={"Mission"} p={longTextM}></VisMis>
             <VisMis id={"vision"} textH3={"Vision"} p={isExpanded ? longText : `${longText.substring(0, 100)}...`} read={ <span className='vM' onClick={toggleReadMore}>
    {isExpanded ? 'Read Less' : 'Read More'}
  </span>}/>
         </div>
     </div>
-    <div id="con"> 
-          <div id="contact"> 
-           <h6>contact information</h6> 
+    <div id="con">
+         <div id="contact">
+           <h6>contact information</h6>
            <p><span>Email</span>: support@votecity.ng</p>
-           <p><span>Phone Number</span>: +234 913 926 5486</p> 
-            <p><span>Address</span>: Lagos State, Nigeria</p> 
-        </div> 
-         <div id="social">
-          <h6>Our Social Media</h6
-         </div> 
-    </div> 
+           <p><span>Phone Number</span>: +234 913 926 5486</p>
+           <p><span>Address</span>: Lagos State, Nigeria</p>
+        </div>
+        <div id="social">
+          <h6>Our Social Media</h6>
+        </div>
+    </div>
    </>
   )
 }
